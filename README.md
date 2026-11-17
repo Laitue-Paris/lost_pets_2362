@@ -25,7 +25,7 @@ Les user-story sont :
 
 * une fois maitrisé, on a le droit de faire : *
 ```ruby
-  <!--- config/routes.rb --->
+  # config/routes.rb
   resources :controller_name
 ```
 ### CRUD VS HTTP Verb
