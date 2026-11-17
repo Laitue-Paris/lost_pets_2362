@@ -1,0 +1,9 @@
+<h1>Bienvenu sur la page de <%= @pet.name %></h1>
+
+<%= link_to "Supprimer la fiche de #{@pet.name}",
+    pet_path(@pet),
+    data: {
+      turbo_method: "delete",
+      turbo_confirm: "Really?"
+    }  %>
+<%= link_to "Retour sur les animaix", pets_path  %>

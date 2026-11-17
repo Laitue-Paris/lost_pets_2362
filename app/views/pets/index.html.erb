@@ -1,0 +1,11 @@
+<h1>Les animaux trouvés ou recherchés</h1>
+<ul>
+  <% @pets.each do |pet| %>
+    <li>
+      <p>
+        <%= pet.name %>, trouvé il y a <%= pet.found_days_ago %> jours
+      </p>
+      <%= link_to "Plus de détails sur #{pet.name}", pet_path(pet) %>
+    </li>
+  <% end %>
+</ul>
