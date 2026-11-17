@@ -10,7 +10,8 @@ Les user-story sont :
 - As a user I can update a pet
 - As a user I can delete a pet
 
-## Reboot : le CRUD en 7 étapes
+## Reboot :
+### le CRUD en 7 étapes
 
 | # | HTTP verb | Controller action | ActiveRecord method |
 |---|-----------|-------------------|---------------------|
@@ -22,8 +23,12 @@ Les user-story sont :
 | 6 | patch /put | update | update |
 | 7 | delete | destroy | destroy |
 
-on peut faire `resources :controller`
-
+* une fois maitrisé, on a le droit de faire : *
+```ruby
+  <!--- config/routes.rb --->
+  resources :controller_name
+```
+### CRUD VS HTTP Verb
 | CRUD | HTTP verb |
 |------|-----------|
 | Create | post |
@@ -31,13 +36,14 @@ on peut faire `resources :controller`
 | Update | patch |
 | Delete | delete |
 
-## MVC
+### Rappel MVC
 
 - Model
 - View
 - Controller
 
-il est temps de creer l'app :
+
+## Il est temps de creer l'app :
 
 ```bash
 rails ... lost_pets --skip-active-storage --skip-action-mailer --skip-ci
